@@ -17,5 +17,7 @@
         <item name="popupTheme">@style/Theme.AppCompat.Light</item>
     </style>
 
+    <style name="estilo_celda">11</style>
+
 
 </resources>

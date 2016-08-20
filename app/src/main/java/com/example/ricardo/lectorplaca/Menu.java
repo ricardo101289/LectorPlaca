@@ -4,10 +4,9 @@ package com.example.ricardo.lectorplaca;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
-import android.support.v4.app.Fragment;
+
 /**
  * Created by ricardo on 21/07/16.
  */
@@ -39,11 +38,11 @@ public class Menu extends AppCompatActivity {
             Datos = extras.getStringArray("Array");
             DatosAvaluos = extras.getStringArray("ArrayAvaluo");
             for (int i = 0; i<extras.getStringArray("Array").length; i++){
-                System.out.println("Informacion de Vehiculo activity2: "+"sitio:"+i+" "+Datos[i]);
+                //System.out.println("Informacion de Vehiculo activity2: "+"sitio:"+i+" "+Datos[i]);
             }
 
             for (int i = 0; i<extras.getStringArray("ArrayAvaluo").length; i++){
-                System.out.println("Informacion de Avaluo activity2: "+"sitio:"+i+" "+DatosAvaluos[i]);
+                //System.out.println("Informacion de Avaluo activity2: "+"sitio:"+i+" "+DatosAvaluos[i]);
             }
 
 

@@ -6,50 +6,53 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="126dp"></RelativeLayout>
+        android:layout_height="126dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/tabla">
+            android:id="@+id/scrollView" >
 
-            <TableRow
+            <TableLayout
+                android:id="@+id/tablacultivos"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button"
+                        android:id="@+id/button3"
+                        android:textSize="22dp" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:text="New Button"
-                    android:id="@+id/button4"
-                    android:layout_column="17" />
-
-            </TableRow>
-        </TableLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button"
+                        android:id="@+id/button4" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
     </RelativeLayout>
 
 </LinearLayout>

@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-                //Trabajabos con documento de Datos Generales
+                //Trabajamos con documento de Datos Generales
                 Element div = document.select("table").attr("class","formulario").last();
                 Elements th = div.select("td");
                 //System.out.println(th);
